@@ -1,0 +1,31 @@
+cd foldername - change directory
+cd /-- we will go to root
+ cd .. --- previous directory
+cd ..//.. --- second from last directory
+
+ls -- long list
+ls -lt --- list of files and dirs from recent time
+ls -ltr -- reverse of recent times
+lr --- recursive printing of subdirectories
+ls -a --hidden files
+ls -la -- list of all files and the hidden files
+ ls -dl -- list of directories
+
+touch - creates an empty file
+ echo "hello" > filename -- sending the data to the file. ( if >> it is used for appending)
+
+cat filename - to see the data in the file
+
+
+mkdir - create a new folder
+cp filename newfilename -- copy and rename file
+rm filename - remove files
+
+rm -i fileName -- ask for confirmation each file
+ rm -f filename -- force deletion of a file
+ rm -r filename --  delete folder
+
+pwd -- print working directory
+cat filename/head -1 -- displays the first line in the file
+vi filename -- opens and creates the file if file is not existed
+

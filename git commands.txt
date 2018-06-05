@@ -1,0 +1,63 @@
+Git Commands:
+
+Commands used to configure in git bash before we actually start working on the repository.
+
+git config --global user.name "github username"
+
+git config --global user.email github emailid
+
+steps to clone a repository from github
+
+1. Create an empty folder in local machine
+2. use git clone (URL from github)
+3. move to the directory where we have .git file
+4. add some files
+5. use git add --all to stage the files
+6. use git commit -m "message" to commit the files( these files will be commited in local machine only)
+7. use git push -u origin master to push the files to central repository
+
+
+steps to create and delete a branch in git:
+ 
+1. Use git branch to check which branch we are in.
+2. use git branch branchname { this command creates a branch from the master branch if we are in master}
+3. we can create branches from --> branch, Tag and Master
+4. use git checkout branchname to switch between the branches.
+5. use git merge branchname to merge the branch to your required branch ( make sure you are not in that particular branch)
+6. use git push -u origin branchname
+
+7. git branch -d branchname to delete a branch( here branch will be deleted only in local)
+9. git push origin --d ( to notify the central)
+
+steps to create and delete tags in git:
+1. use git tag patch1( to create a tag)
+2. git push --tags (to push the tags to central)
+
+3. git tag -d patch1 (to delete in local)
+4. git push origin --delete patch1 (to delete in central)
+
+few important git commands:
+git ignore-- ignores certain files and directories
+ vim .gitignore-- creates a .ignore file in workspace
+ 
+git log-- provides the git commits list from latest to oldest
+git log -2-- prints 2 commit id's from latest to oldest
+git log --oneline -- short form of commits
+git log --grep "strignname' -- display the commits with the string ame given
+
+git log -1 -- recent and top most commit
+
+git cherry-pick <commitid> -- if we have many commits id's in the source branch, if we want to push only particular commit then we use cherrypick
+git stash --- after staging, if we dont want to commit but still need the file, then we use stash
+ git stash list-- display all the files that are stashed
+git stash pop --- reapply and drop the reference ( the file we be back to unstaged area)
+
+git reset HEAD URLof file -- unstage before commiting 
+ git reset --hard HEAD - reset entire repo
+
+git revert-- after commit if we dont need the file then we use revert.
+ git difftool origin/master -- before pushing we need to check with the central in order to sync
+git merge tool --- to merge the branch with required branch
+
+
+
